@@ -12,7 +12,6 @@ public class FileReader {
     public static void main(String[] args) {
         FileReader fileReader = new FileReader();
         fileReader.getDataFromFile(new File("src/main/resources/Profile.txt"));
-        System.out.println();
     }
 
     public Profile getDataFromFile(File file) {
@@ -20,7 +19,7 @@ public class FileReader {
 
         try {
             List<String> strings = Files.readAllLines(Paths.get(String.valueOf(file)));
-//            file.close();
+
             String[] name = strings.get(0).split(" ");
             String[] age = strings.get(1).split(" ");
             String[] eMail = strings.get(2).split(" ");
