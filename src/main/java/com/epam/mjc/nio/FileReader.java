@@ -29,7 +29,7 @@ public class FileReader {
             profile.setAge(Integer.parseInt(age[1]));
             profile.setEmail(eMail[1]);
             profile.setPhone(Long.parseLong(phone[1]));
-
+            //file.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
